@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/Models/page_view_model.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
 import 'package:flutter_app_ielts/HomePage.dart';
+import 'testYourselfPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,10 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'IELTS INTRO'),
+      //home: MyHomePage(title: 'IELTS INTRO'),
+      home: MyHomePage3(),
     );
   }
 }

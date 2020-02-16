@@ -14,6 +14,73 @@ class _MyHomePageState2 extends State<MyHomePage2>{
       appBar: AppBar(
         title: Text('Contents'),
       ),
+        drawer: Drawer(
+          // Add a ListView to the drawer. This ensures the user can scroll
+          // through the options in the drawer if there isn't enough vertical
+          // space to fit everything.
+          child: ListView(
+            // Important: Remove any padding from the ListView.
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                child: Text('IELTS Contents',style: TextStyle(color: Colors.white,fontSize: MediaQuery.of(context).size.height/30)),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+              ),
+              ListTile(
+                title: Text('Test Speaking',style: TextStyle(fontSize: MediaQuery.of(context).size.height/60)),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(),
+              ListTile(
+                title: Text('Test Reading',style: TextStyle(fontSize: MediaQuery.of(context).size.height/60)),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(),
+              ListTile(
+                title: Text('Test Listening',style: TextStyle(fontSize: MediaQuery.of(context).size.height/60)),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(),
+              ListTile(
+                title: Text('Test Writing',style: TextStyle(fontSize: MediaQuery.of(context).size.height/60)),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(),
+              ListTile(
+                title: Text('Learn 1000 most used English words',style: TextStyle(fontSize: MediaQuery.of(context).size.height/60)),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(),
+            ],
+          ),
+        ),
       body: ListView(
         children: <Widget>[
           Padding(
